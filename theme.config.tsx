@@ -2,16 +2,16 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: 'https://avatars.githubusercontent.com/u/132740827?v=4',
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://flessan.pages.dev',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://dcd.gg/gdi',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/flessan/nextra',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'SMK Bisa - Hebat',
   },
 }
 
