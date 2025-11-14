@@ -1,0 +1,261 @@
+---
+title: Cam and Mic Diagnostics
+description: A Static HTML Code That Test your cam and mic
+---
+
+# 🎥 AV Test Studio Pro - Documentation
+
+![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
+![Version](https://img.shields.io/badge/version-2.4.1-blue?style=flat-square)
+![License](https://img.shields.io/badge/license-open--source-lightgrey?style=flat-square)
+![Last Updated](https://img.shields.io/badge/updated-2025-orange?style=flat-square)
+
+**Live Demo** → [flessan.pages.dev/cam](https://flessan.pages.dev/cam)
+
+## 🧩 Overview
+
+**AV Test Studio Pro** is a professional audio-visual testing and diagnostics tool designed to help users test their **camera and microphone functionality** directly in a web browser.  
+The app provides a full-featured interface for testing, recording, and analyzing audio-visual performance.
+
+## 🌐 Live Preview & Privacy
+
+| Feature | Link |
+|---------|------|
+| Live Preview | [flessan.pages.dev/cam](https://flessan.pages.dev/cam) |
+| Privacy Policy | [flessan.pages.dev/cam/p.html](https://flessan.pages.dev/cam/p.html) |
+
+## ⚙️ Features
+
+::tabs
+  :::tabs-item{icon="i-lucide-video" label="Camera Testing"}
+    | Feature | Description |
+    |---------|-------------|
+    | Real-time Preview | Camera preview in real-time |
+    | Device Selection | Switch between multiple cameras |
+    | Video Quality | Adjustable video quality |
+    | Zoom Control | Digital zoom control |
+    | Snapshot Capture | Take still images |
+    | Video Recording | Record video with audio |
+    | Camera Diagnostics | Resolution, FPS, and device info |
+    
+    <img width="1070" height="728" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/2129f2d3-75d7-496f-a51d-0f320bd42544" />
+  :::
+
+  :::tabs-item{icon="i-lucide-mic" label="Microphone Testing"}
+    | Feature | Description |
+    |---------|-------------|
+    | Real-time Visualization | Frequency & waveform display |
+    | Microphone Selector | Choose from available input devices |
+    | Echo Control | Toggle echo with volume adjustment |
+    | Noise Reduction | Toggle noise reduction |
+    | Test Tone | 440Hz test tone generator |
+    | Audio Diagnostics | Input level, frequency, and device info |
+    
+    <img width="1362" height="729" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/663b1fab-fffa-4a69-a1e0-f9851f2a7c09" />
+  :::
+
+  :::tabs-item{icon="i-lucide-cpu" label="System Diagnostics"}
+    | Feature | Description |
+    |---------|-------------|
+    | Battery Level | Monitor battery status |
+    | Memory Usage | Track memory consumption |
+    | Network Speed | Display network speed |
+    | CPU Temperature | Read CPU temperature (if available) |
+  :::
+::
+::
+
+## 🧱 Code Structure
+
+::tabs
+  :::tabs-item{icon="i-lucide-file-text" label="HTML Layout"}
+    :::steps
+    #### Header Section
+    
+    Title, branding, and description
+    
+    #### Main Grid
+    
+    Two-column responsive layout for camera & audio panels
+    
+    #### Camera Panel
+    
+    Preview, device selector, controls, diagnostics
+    
+    #### Audio Panel
+    
+    Visualization, mic controls, test options
+    
+    #### Diagnostics Panel
+    
+    System info cards & status
+    
+    #### Status Bar
+    
+    Global status messages & indicators
+    :::
+  :::
+
+  :::tabs-item{icon="i-lucide-palette" label="CSS Styling"}
+    | Feature | Description |
+    |---------|-------------|
+    | Design | Dark mode design with cyan & blue accents |
+    | UI Style | Glassmorphism UI (blurred panels) |
+    | Layout | Responsive layout for all screen sizes |
+    | Animations | Subtle animations & hover effects |
+    | Controls | Custom controls for sliders, buttons, and selectors |
+    
+    <img width="1366" height="768" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/dceab565-92f8-4f0d-8039-f7d71a7fb5a5" />
+  :::
+
+  :::tabs-item{icon="i-lucide-code" label="JavaScript Structure"}
+    :::note
+    Organized into a class-based controller: `AVTestStudioPro`
+    ::
+    
+    ::accordion
+      :::accordion-item{icon="i-lucide-video" label="Camera Methods"}
+      - `startCamera()`, `stopCamera()`
+      - `switchCamera()`
+      - `takeSnapshot()`
+      - `startRecording()` / `stopRecording()`
+      :::
+      
+      :::accordion-item{icon="i-lucide-mic" label="Audio Methods"}
+      - `startMicrophone()`, `stopMicrophone()`
+      - `toggleEcho()`, `toggleNoiseReduction()`
+      - `playTestTone()`
+      - `startVisualization()`
+      :::
+      
+      :::accordion-item{icon="i-lucide-activity" label="Diagnostics"}
+      - `updateDiagnostics()`
+      - `runFullDiagnostics()`
+      :::
+      
+      :::accordion-item{icon="i-lucide-wrench" label="Utility"}
+      - `updateTestResult()`
+      - `updateStatus()`
+      - `enumerateDevices()`
+      :::
+    :::
+  :::
+::
+::
+
+## 🧭 How to Use
+
+::tabs
+  :::tabs-item{icon="i-lucide-video" label="Camera"}
+    :::steps
+    #### Select camera device
+    
+    #### Click **"Start Camera"**
+    
+    #### Adjust **quality & zoom**
+    
+    #### Take **snapshots or record video**
+    
+    #### Review **camera info & test results**
+    :::
+  :::
+
+  :::tabs-item{icon="i-lucide-mic" label="Microphone"}
+    :::steps
+    #### Select mic device
+    
+    #### Click **"Start Mic"**
+    
+    #### Switch between **frequency/waveform**
+    
+    #### Enable **echo** or **noise reduction**
+    
+    #### Play **test tone** for audio verification
+    :::
+  :::
+
+  :::tabs-item{icon="i-lucide-cpu" label="System Diagnostics"}
+    :::steps
+    #### View real-time system info
+    
+    #### Run **Full Diagnostics**
+    
+    #### Review battery, memory, network, and CPU status
+    :::
+  :::
+::
+::
+
+## 🧩 Technical Implementation
+
+::tabs
+  :::tabs-item{icon="i-lucide-api" label="Media APIs"}
+    | API | Purpose |
+    |-----|---------|
+    | getUserMedia | `MediaDevices.getUserMedia()` – camera & mic access |
+    | MediaRecorder | `MediaRecorder` – video/audio recording |
+    | Web Audio API | `Web Audio API` – visualization & analysis |
+  :::
+
+  :::tabs-item{icon="i-lucide-bar-chart" label="Visualization Techniques"}
+    | Technique | Description |
+    |-----------|-------------|
+    | Frequency Bars | Real-time frequency visualization |
+    | Waveform | Oscilloscope waveform display |
+    | Canvas Rendering | Smooth real-time drawing |
+  :::
+
+  :::tabs-item{icon="i-lucide-smartphone" label="Responsive Design"}
+    | Device | Layout |
+    |--------|--------|
+    | Desktop | Two-column layout |
+    | Tablet | Compact single-column |
+    | Mobile | Optimized controls and layout |
+  :::
+::
+::
+
+## 🔒 Privacy Considerations
+
+:::note
+Your privacy is our priority
+::
+
+- All processing runs **locally in the browser**  
+- No external server communication  
+- User fully controls camera & mic access  
+- Detailed policy: [Privacy Page](https://flessan.pages.dev/cam/p.html)
+
+## 🌍 Browser Compatibility
+
+:::note
+Supports browsers with MediaDevices API, Web Audio API, MediaRecorder API, and ES6 JavaScript
+::
+
+- ✅ Chrome 53+  
+- ✅ Firefox 49+  
+- ✅ Safari 11+  
+- ✅ Edge 79+
+
+## 🚀 Future Enhancements
+
+:::note
+Planned updates coming soon!
+::
+
+- 🎨 Advanced video filters  
+- 🔊 Detailed audio analytics  
+- 💾 Export test results  
+- ☁️ Cloud integration  
+- 🧩 Multi-device testing  
+
+## 🏁 Conclusion
+
+**AV Test Studio Pro** delivers a powerful and privacy-focused environment for **testing camera and microphone performance** directly in your browser.  
+With real-time diagnostics, clean visuals, and zero data tracking, it's the go-to tool for reliable audio-visual testing.
+
+---
+
+**Current Version**: Beta 2.4.1  
+**Last Updated**: 2025  
+**Maintained by**: Rekaluna Development Team
