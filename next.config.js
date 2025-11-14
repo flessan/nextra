@@ -4,7 +4,6 @@ const withNextra = require('nextra')({
 })
 
 module.exports = withNextra({
-  // Add these options to fix potential build issues
   output: 'export',
   trailingSlash: true,
   images: {
