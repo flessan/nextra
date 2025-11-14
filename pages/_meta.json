@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
   "cv": "resume",
-  "advanced": "All My Projects",
+  "projects": "All My Projects",
   "about": {
     "title": "About",
     "type": "page"
