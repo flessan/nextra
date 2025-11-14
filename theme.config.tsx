@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>🚀 My Angkasa</span>,
+  logo: <span>🚀 My Projects</span>,
   project: {
     link: 'https://github.com/flessan/nextra',
   },
