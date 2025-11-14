@@ -1,0 +1,243 @@
+---
+title: Clock and Time Check
+description: A Static HTML Code That Displays the Time
+---
+
+# ⏰ Jam++ – Advanced Multi-Feature Clock
+
+![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
+![Version](https://img.shields.io/badge/version-6.3-blue?style=flat-square)
+![License](https://img.shields.io/badge/license-open--source-lightgrey?style=flat-square)
+![Last Updated](https://img.shields.io/badge/updated-2025-orange?style=flat-square)
+
+**Live Demo** → [flessan.pages.dev/jam](https://flessan.pages.dev/jam)
+
+## 📋 Project Overview
+
+**Jam++** is a modern, all-in-one **time management web app** combining **analog and digital clocks** with a full suite of **productivity tools** — including Pomodoro sessions, alarms, countdowns, world clocks, and more.  
+Built entirely with **HTML, CSS, and JavaScript**, it runs perfectly on **any static host** such as GitHub Pages or Cloudflare Pages.
+
+## ✨ Key Features
+
+::tabs
+  :::tabs-item{icon="i-lucide-clock" label="Real-Time Clocks"}
+    :::card-group
+      ::::card{icon="i-lucide-circle" title="Analog Clock"}
+      Smooth-moving hour, minute, and second hands  
+      Multiple clock styles: Classic, Modern, Minimal, Roman  
+      ::::
+      
+      ::::card{icon="i-lucide-digital" title="Digital Clock"}
+      12h/24h format toggle  
+      Displays date, day, month, year  
+      ::::
+    :::
+  :::
+
+  :::tabs-item{icon="i-lucide-palette" label="Themes & Interface"}
+    | Feature | Description |
+    |---------|-------------|
+    | Built-in Themes | 🌑 Dark 🌊 Ocean 🌅 Sunset 🌳 Forest |
+    | Custom Themes | Create your own themes |
+    | Auto Theme Switching | Changes by time automatically |
+    | Fullscreen Mode | Distraction-free experience |
+    | Responsive Design | Adaptable to any device |
+  :::
+
+  :::tabs-item{icon="i-lucide-volume-2" label="Sound & Interaction"}
+    | Feature | Description |
+    |---------|-------------|
+    | Toggleable Sounds | Ticking and action sounds |
+    | Volume Control | Volume slider in Settings |
+    | Audio Feedback | Notifications for alarms and Pomodoro |
+  :::
+
+  :::tabs-item{icon="i-lucide-zap" label="Productivity Tools"}
+    ::accordion
+      :::accordion-item{icon="i-lucide-info" label="Time Info"}
+      Showing Your Information, Data Is Not Deposited To Server, It Only Works In Your Local Device Only  
+      :::
+      
+      :::accordion-item{icon="i-lucide-timer" label="Pomodoro Timer"}
+      25-minute focus sessions with notifications  
+      :::
+      
+      :::accordion-item{icon="i-lucide-hourglass" label="Countdown Timer"}
+      Custom hour-minute-second countdown  
+      :::
+      
+      :::accordion-item{icon="i-lucide-stopwatch" label="Stopwatch"}
+      Lap tracking and total time logging  
+      :::
+      
+      :::accordion-item{icon="i-lucide-bell" label="Alarm"}
+      Multiple alarms with custom labels  
+      :::
+      
+      :::accordion-item{icon="i-lucide-globe" label="Timezone Converter"}
+      Changing Time from one Timezone to another Timezone  
+      :::
+      
+      :::accordion-item{icon="i-lucide-map-pin" label="World Clock"}
+      Live time in New York, London, Tokyo, Sydney  
+      :::
+      
+      :::accordion-item{icon="i-lucide-calendar" label="Day Counter"}
+      Counting the days from start to end, results appear immediately  
+      :::
+      
+      :::accordion-item{icon="i-lucide-calendar-days" label="Events"}
+      Add and manage custom event countdowns  
+      :::
+    :::
+  :::
+::
+
+## 📱 Progressive Web App (PWA) Support
+
+:::card-group
+  ::card{icon="i-lucide-wifi-off" title="Offline Ready"}
+  Runs smoothly even without internet  
+  ::
+  
+  ::card{icon="i-lucide-download" title="Installable App"}
+  Add Jam++ to your home screen  
+  ::
+  
+  ::card{icon="i-lucide-monitor" title="Cross-Platform"}
+  Works on desktop, mobile, and tablets  
+  ::
+  
+  ::card{icon="i-lucide-zap" title="Fast Performance"}
+  Optimized caching and lightweight design  
+  ::
+::
+::
+
+## 📦 Installation & Setup
+
+::tabs
+  :::tabs-item{icon="i-lucide-globe" label="Web Access"}
+    :::note
+    Just visit: [flessan.pages.dev/jam](https://flessan.pages.dev/jam)
+    ::
+    
+    ![Jam Preview](https://github.com/user-attachments/assets/95c27bdf-7145-4724-a956-5d3fba4a05f3)
+  :::
+
+  :::tabs-item{icon="i-lucide-terminal" label="Local Installation"}
+    :::steps
+    #### Download or clone the repository
+    
+    #### Open `index.html` in any modern browser
+    
+    #### Explore all features through the intuitive tabbed interface
+    :::
+  :::
+
+  :::tabs-item{icon="i-lucide-settings" label="Customization Options"}
+    | Feature | How to Modify |
+    |---------|---------------|
+    | Default Theme | Change `data-theme="ocean"` in `<html>` |
+    | Clock Size | Edit `--clock-size` in CSS |
+    | Pomodoro Duration | Adjust `this.pomodoroTime = 25 * 60;` in JS |
+    | World Clock Cities | Edit `cities` array in `updateWorldClocks()` |
+    | Sounds | Customize mappings in `playSound()` |
+    | Events & Alarms | Use the Events or Alarm tabs directly |
+  :::
+::
+::
+
+## 🗺️ Roadmap & Upcoming Features
+
+:::note
+Version 5.0 Planned Updates coming soon!
+::
+
+| Feature | Status | Priority | Description |
+|---------|--------|----------|-------------|
+| Widget Mode | In Development | High | Floating mini clock widget |
+| Theme Editor | Planned | Medium | Create and save custom themes |
+| Cloud Sync | Research | Medium | Sync data between devices |
+| Weather Integration | Planned | Low | Display local weather info |
+
+### 🌟 Highlights for Next Update
+
+- Mini Clock Widget for overlay use  
+- Cloud Backup for settings and stats  
+- Improved Notifications for alarms and timers  
+- Mobile Optimization for smoother UX  
+
+## 🐛 Bug Reports & Feedback
+
+:::note
+We'd love your feedback to improve **Jam++**!
+::
+
+### 💬 Submit Feedback
+- **Portal**: [fless.netlify.app/feedback](https://fless.netlify.app/feedback)  
+- **Accepted Types**: Bug reports, feature requests, design suggestions  
+- **Response Goal**: Within 48 hours  
+
+### 🧾 Include in Report
+| Item | Description |
+|------|-------------|
+| Issue Details | Detailed issue or suggestion |
+| Reproduction Steps | Steps to reproduce (if applicable) |
+| Browser & Device | Browser & device info |
+| Screenshot | Screenshot (optional) |
+
+## 🛠️ Technical Specifications
+
+::tabs
+  :::tabs-item{icon="i-lucide-code" label="Technologies Used"}
+    | Technology | Purpose |
+    |------------|---------|
+    | Frontend | HTML5, CSS3, Vanilla JavaScript |
+    | Storage | Local Storage (JSON export/import) |
+    | PWA | Offline-ready caching |
+    | Hosting | Cloudflare Pages / GitHub Pages / ETC |
+    | Performance | Lightweight and optimized for fast load |
+  :::
+
+  :::tabs-item{icon="i-lucide-monitor" label="Browser Compatibility"}
+    - ✅ Chrome 80+  
+    - ✅ Firefox 75+  
+    - ✅ Safari 13+  
+    - ✅ Edge 80+  
+    - ✅ Android & iOS browsers  
+  :::
+
+  :::tabs-item{icon="i-lucide-zap" label="Performance Metrics"}
+    | Metric | Value |
+    |--------|-------|
+    | Load Time | < 2 seconds |
+    | Offline First | Fully usable without internet |
+    | Storage | Saves settings, alarms, events locally |
+    | Auto Updates | Cache refreshes automatically |
+  :::
+::
+::
+
+## 🤝 Community & Support
+
+:::note
+Get involved with the project! Star it on GitHub, suggest new ideas, report issues, or contribute to documentation.
+::
+
+### 💡 Get Involved
+- ⭐ Star the project on GitHub  
+- 🧠 Suggest new ideas or improvements  
+- 🐞 Report issues & contribute code  
+- 🧾 Help improve documentation  
+
+### 🔔 Stay Updated
+Follow development progress and future release notes.
+
+---
+
+*Jam++ — Keeping you on time, focused, and productive.*
+
+**Current Version**: 6.3  
+**Last Updated**: 2025  
+**Maintained by**: Rekaluna Development Team
