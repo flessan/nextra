@@ -2,16 +2,26 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: 'https://avatars.githubusercontent.com/u/132740827?v=4',
+  logo: <span>🚀 My Angkasa</span>,
   project: {
-    link: 'https://flessan.pages.dev',
+    link: 'https://github.com/flessan/nextra',
   },
-  chat: {
-    link: 'https://dcd.gg/gdi',
-  },
-  docsRepositoryBase: 'https://github.com/flessan/nextra',
+  docsRepositoryBase: 'https://github.com/flessan/nextra/tree/main',
   footer: {
-    text: 'SMK Bisa - Hebat',
+    text: 'Built with ❤️ by Thio Saputra',
+  },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
+  toc: {
+    backToTop: true,
+  },
+  editLink: {
+    text: 'Edit this page on GitHub →',
+  },
+  feedback: {
+    content: 'Question? Give us feedback →',
+    labels: 'feedback',
   },
 }
 
